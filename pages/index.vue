@@ -3,6 +3,7 @@
 </script>
 <template>
   <div>
+
   <div class="">
     <h1 class="mb-4 text-xl font-bold">Welcome {user}</h1>
     <p>Access your dashboard and account from here</p>
@@ -16,7 +17,9 @@
   </div>
   <!-- <AddComponent/> -->
    <app/>
+   <MyEvent/>
 </div>
+
 </template>
 
 <style></style>

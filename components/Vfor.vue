@@ -142,7 +142,7 @@ const games = ref({
     <section class="section">
       <h1>Games</h1>
       <ul class="list">
-        <!-- Iterate over each game -->
+        <!-- Iterate over each game object -->
         <li v-for="(game, key) in games" :key="key" class="item">
           <!-- Display basic information of the game -->
           <p><strong>Game ID:</strong> {{ game.id }}</p>
@@ -152,10 +152,14 @@ const games = ref({
           <p><strong>Genre:</strong> {{ game.genre }}</p>
           <p><strong>Release Year:</strong> {{ game.releaseYear }}</p>
           <p><strong>Ratings:</strong> Metacritic: {{ game.ratings.metacritic }}, User: {{ game.ratings.user }}</p>
-		 
+
+          <!-- Iterate over each property of the game object -->
+          <ul>
+            <li v-for="(value, property) in game" :key="property" class="item">
+              <p><strong>{{ property }}:</strong> {{ value }}</p>
+            </li>
+          </ul>
         </li>
-		<br/>
-		<li v-for="(property, i) in games" :key="i" class="item">{{ property }}</li>
       </ul>
     </section>
   </div>

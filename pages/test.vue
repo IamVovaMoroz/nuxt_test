@@ -1,5 +1,5 @@
 <script setup>
-
+// import Vfor from '@/components/Vfor.vue';
 </script>
 
 <template>
@@ -8,6 +8,7 @@
 
 		<ComputedProperties />
 		<ConditionalRendering />
+		<Vfor/>
 
 	</div>
 </template>

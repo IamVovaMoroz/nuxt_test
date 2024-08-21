@@ -9,6 +9,7 @@
 		<ComputedProperties />
 		<ConditionalRendering />
 		<Vfor/>
+		<Vmodel/>
 
 	</div>
 </template>

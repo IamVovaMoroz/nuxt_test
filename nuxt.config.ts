@@ -5,6 +5,9 @@ export default defineNuxtConfig({
     // "nuxt-server-utils", "@sidebase/nuxt-auth" 
   ],
   compatibilityDate: "2024-08-16",
+  // devServer: {
+  //   port: 4000
+  // }
 //   nuxtServerUtils: {
 //     enabled: true, // default
 //     enableDevTools: true, // default

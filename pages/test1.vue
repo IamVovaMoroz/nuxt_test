@@ -17,14 +17,28 @@ const carDescription = {
   features: ['Air Conditioning', 'Bluetooth', 'Backup Camera'],  // Common features
 };
 
+// Count Event
+import { ref } from 'vue';
+
+let count = ref(0)
+
+const formHandlerConsole = (username, email, password) => {
+	console.log('username see in parent', username)
+	console.log('email see in parent', email)
+	console.log('password see in parent', password)
+}
+
 </script>
 
 <template>
 	<div class="border">
 	<h1>TEST 1</h1>
+	<h1>Count: {{ count }}</h1>
+	<ComponentEvent @incrementCounter="count++"/>
 
 
-<ComplexProps :cars="cars" :carDescription="carDescription"/>
 
+<!-- <ComplexProps :cars="cars" :carDescription="carDescription"/> -->
+<Vmodel @userInfo="formHandlerConsole"/>
 </div>
 </template>

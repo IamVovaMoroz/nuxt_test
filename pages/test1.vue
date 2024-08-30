@@ -19,6 +19,7 @@ const carDescription = {
 
 // Count Event
 import { ref } from 'vue';
+import Slot from '~/components/Slot.vue';
 
 let count = ref(0)
 
@@ -39,6 +40,21 @@ const formHandlerConsole = (username, email, password) => {
 
 
 <!-- <ComplexProps :cars="cars" :carDescription="carDescription"/> -->
+ <!-- @userInfo from children component. formHandlerConsole -in parent -what we need to do with this data -->
 <Vmodel @userInfo="formHandlerConsole"/>
+
+<hr>
+
+
+<!-- <Slot>
+
+	<h1>Content from parent to children Slot</h1>
+	<h1>Content 2 from parent to children Slot</h1>
+
+	
+</Slot> -->
+<DefaultContentSlot>
+	<p>Default content is working, and doent work content from children component in slot</p>
+</DefaultContentSlot>
 </div>
 </template>

@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue';
-// const formData = ref({ username: '', email: '', password: '' })
+const formData = ref({ username: '', email: '', password: '' })
 
 const username = ref('')
 const email = ref('')
@@ -29,7 +29,7 @@ const password = ref('')
 			<input type="text" placeholder="Enter your password" v-model="password">
 			<button type="submit">submit</button>
 		</form>
-		<h1>{{ username }}</h1>
+		<h1>{{ formData.username }}</h1>
 		<h1>{{ email }}</h1>
 		<h1>{{ password }}</h1>
 	</div>

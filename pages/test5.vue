@@ -11,6 +11,12 @@ const showHide = ref(true)
 
 <LifeCycleComponent v-if="showHide"/>
 <button @click="showHide = !showHide">Show / Hide</button>
+<hr>
+<BasicWatcher/>
 
+<hr>
+<ReactiveObjectWatcher/>
+<hr>
+<MultipleWatcher/>
 </div>
 </template>

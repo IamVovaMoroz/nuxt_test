@@ -18,5 +18,8 @@ const showHide = ref(true)
 <ReactiveObjectWatcher/>
 <hr>
 <MultipleWatcher/>
+
+<hr>
+
 </div>
 </template>

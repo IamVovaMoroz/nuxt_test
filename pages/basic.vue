@@ -6,8 +6,13 @@
 	<div class="border">
 	<h1>Basic page</h1>
 
-<BasicRef/>
+<!-- <BasicRef/> -->
+<hr>
+<ToggleFriends/>
+<hr>
 
+<ComposableComponent/>
+<AnotherComponent/>
 
-</div>
+	</div>
 </template>

@@ -15,6 +15,7 @@ const counter = useCounter()
 </script>
 
 <template>
+	<!--  -->
 <!-- The Solution is to extract off the logic from this component and create a separate Composable
 
 Creating a separate composable will allow us to reuse that logic in overall application -->

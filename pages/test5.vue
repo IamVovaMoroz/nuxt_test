@@ -1,6 +1,8 @@
 <script setup>
 
+
 import { ref } from 'vue';
+import Lesson1 from '~/components/Lesson1.vue';
 const showHide = ref(true)
 
 </script>
@@ -8,7 +10,7 @@ const showHide = ref(true)
 <template>
 	<div class="border">
 	<h1>TEST5</h1>
-
+	
 <LifeCycleComponent v-if="showHide"/>
 <button @click="showHide = !showHide">Show / Hide</button>
 <hr>
@@ -20,6 +22,6 @@ const showHide = ref(true)
 <MultipleWatcher/>
 
 <hr>
-
+<Lesson1/>
 </div>
 </template>

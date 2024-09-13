@@ -23,5 +23,9 @@ const showHide = ref(true)
 
 <hr>
 <Lesson1/>
+
+<hr>
+
+<Cards/>
 </div>
 </template>

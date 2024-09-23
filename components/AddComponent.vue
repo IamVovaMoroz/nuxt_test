@@ -11,7 +11,7 @@ const altText = 'Just alt from JS script'
 const sizesImg = 400
 
 
-// dynamic binding!
+// dynamic binding!!!!!
 
 const imageInfo = {
 	src: 'https://images.wallpaperscraft.ru/image/single/devushka_siluet_planeta_1067694_3840x2400.jpg',
